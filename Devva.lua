@@ -36,12 +36,18 @@ local infijump = Instance.new("Frame")
 local TextButton_4 = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local TextLabel_4 = Instance.new("TextLabel")
-local HomeFrame = Instance.new("Frame")
+local SPEED = Instance.new("Frame")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
+local HomeFrame = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
 local status = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
 local Minimize = Instance.new("TextButton")
 local comingson = Instance.new("TextLabel")
+local Frame_6 = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
 
 Devvas.Name = "Devvas"
 Devvas.Parent = game.CoreGui
@@ -52,6 +58,7 @@ Devva.Parent = Devvas
 Devva.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
 Devva.Position = UDim2.new(0.326504469, 0, 0.22580646, 0)
 Devva.Size = UDim2.new(0, 473, 0, 36)
+Devva.Visible = false
 Devva.Font = Enum.Font.FredokaOne
 Devva.Text = " Devva | Script"
 Devva.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -296,6 +303,35 @@ TextLabel_4.Text = "INFINITE JUMP"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextSize = 15.000
 
+SPEED.Name = "SPEED"
+SPEED.Parent = PlayerFrame
+SPEED.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+SPEED.BorderSizePixel = 0
+SPEED.Position = UDim2.new(0.0176470596, 0, 0.257999986, 9)
+SPEED.Size = UDim2.new(0, 327, 0, 31)
+
+TextButton_5.Parent = SPEED
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+TextButton_5.Position = UDim2.new(0.924000025, -5, 0.0967741907, 0)
+TextButton_5.Size = UDim2.new(0, 25, 0, 25)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = ""
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextSize = 14.000
+
+UICorner_11.Parent = TextButton_5
+
+TextLabel_5.Parent = SPEED
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.0399999991, -6, 0.0967741907, 0)
+TextLabel_5.Size = UDim2.new(0, 51, 0, 25)
+TextLabel_5.Font = Enum.Font.GothamBold
+TextLabel_5.Text = "SPEED"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 15.000
+
 HomeFrame.Name = "HomeFrame"
 HomeFrame.Parent = Main
 HomeFrame.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
@@ -303,15 +339,15 @@ HomeFrame.BorderSizePixel = 0
 HomeFrame.Position = UDim2.new(0.270999998, -3, 0.0265151523, 0)
 HomeFrame.Size = UDim2.new(0, 340, 0, 250)
 
-TextLabel_5.Parent = HomeFrame
-TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.BackgroundTransparency = 1.000
-TextLabel_5.Position = UDim2.new(0.0588235334, 0, 0.0199999809, 0)
-TextLabel_5.Size = UDim2.new(0, 299, 0, 50)
-TextLabel_5.Font = Enum.Font.FredokaOne
-TextLabel_5.Text = "Welcome to Devva | Script!"
-TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.TextSize = 27.000
+TextLabel_6.Parent = HomeFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0588235334, 0, 0.0199999809, 0)
+TextLabel_6.Size = UDim2.new(0, 299, 0, 50)
+TextLabel_6.Font = Enum.Font.FredokaOne
+TextLabel_6.Text = "Welcome to Devva | Script!"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 27.000
 
 status.Name = "status"
 status.Parent = HomeFrame
@@ -355,7 +391,7 @@ comingson.Name = "comingson"
 comingson.Parent = Devvas
 comingson.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 comingson.BorderSizePixel = 0
-comingson.Position = UDim2.new(0.396183014, -3, 0.452047437, 0)
+comingson.Position = UDim2.new(0.428393841, -3, 0.452047437, 0)
 comingson.Size = UDim2.new(0, 200, 0, 50)
 comingson.Visible = false
 comingson.Font = Enum.Font.GothamBold
@@ -363,9 +399,25 @@ comingson.Text = "Coming Soon!"
 comingson.TextColor3 = Color3.fromRGB(255, 255, 255)
 comingson.TextSize = 14.000
 
+Frame_6.Parent = Devvas
+Frame_6.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+Frame_6.BorderSizePixel = 0
+Frame_6.Position = UDim2.new(0.429721862, 0, 0.423149914, 0)
+Frame_6.Size = UDim2.new(0, 190, 0, 80)
+
+TextLabel_7.Parent = Frame_6
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Size = UDim2.new(0, 190, 0, 80)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Please wait..."
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 17.000
+
 -- Scripts:
 
-local function MZTTE_fake_script() -- HomeButton.LocalScript 
+local function NILWGIA_fake_script() -- HomeButton.LocalScript 
 	local script = Instance.new('LocalScript', HomeButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -380,8 +432,8 @@ local function MZTTE_fake_script() -- HomeButton.LocalScript
 		script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
 	end)
 end
-coroutine.wrap(MZTTE_fake_script)()
-local function ZRTRMZA_fake_script() -- HomeButton.LocalScript 
+coroutine.wrap(NILWGIA_fake_script)()
+local function AASG_fake_script() -- HomeButton.LocalScript 
 	local script = Instance.new('LocalScript', HomeButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -390,8 +442,8 @@ local function ZRTRMZA_fake_script() -- HomeButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZRTRMZA_fake_script)()
-local function CZJHJ_fake_script() -- PlayerButton.LocalScript 
+coroutine.wrap(AASG_fake_script)()
+local function ZYFYXO_fake_script() -- PlayerButton.LocalScript 
 	local script = Instance.new('LocalScript', PlayerButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -406,8 +458,8 @@ local function CZJHJ_fake_script() -- PlayerButton.LocalScript
 		script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
 	end)
 end
-coroutine.wrap(CZJHJ_fake_script)()
-local function CUAAR_fake_script() -- PlayerButton.LocalScript 
+coroutine.wrap(ZYFYXO_fake_script)()
+local function HLPPYM_fake_script() -- PlayerButton.LocalScript 
 	local script = Instance.new('LocalScript', PlayerButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -416,8 +468,8 @@ local function CUAAR_fake_script() -- PlayerButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(CUAAR_fake_script)()
-local function VZHMZHD_fake_script() -- ScriptsButton.LocalScript 
+coroutine.wrap(HLPPYM_fake_script)()
+local function HKFEAFE_fake_script() -- ScriptsButton.LocalScript 
 	local script = Instance.new('LocalScript', ScriptsButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -432,8 +484,8 @@ local function VZHMZHD_fake_script() -- ScriptsButton.LocalScript
 		script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
 	end)
 end
-coroutine.wrap(VZHMZHD_fake_script)()
-local function AZKJFL_fake_script() -- ScriptsButton.LocalScript 
+coroutine.wrap(HKFEAFE_fake_script)()
+local function IZIG_fake_script() -- ScriptsButton.LocalScript 
 	local script = Instance.new('LocalScript', ScriptsButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -445,8 +497,8 @@ local function AZKJFL_fake_script() -- ScriptsButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(AZKJFL_fake_script)()
-local function TJAS_fake_script() -- GameButton.LocalScript 
+coroutine.wrap(IZIG_fake_script)()
+local function XFFBQDM_fake_script() -- GameButton.LocalScript 
 	local script = Instance.new('LocalScript', GameButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -461,8 +513,8 @@ local function TJAS_fake_script() -- GameButton.LocalScript
 		script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
 	end)
 end
-coroutine.wrap(TJAS_fake_script)()
-local function ZHPOD_fake_script() -- GameButton.LocalScript 
+coroutine.wrap(XFFBQDM_fake_script)()
+local function BVLEKD_fake_script() -- GameButton.LocalScript 
 	local script = Instance.new('LocalScript', GameButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -474,8 +526,8 @@ local function ZHPOD_fake_script() -- GameButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZHPOD_fake_script)()
-local function EGXB_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(BVLEKD_fake_script)()
+local function MHNXF_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -490,8 +542,8 @@ local function EGXB_fake_script() -- CreditsButton.LocalScript
 		script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
 	end)
 end
-coroutine.wrap(EGXB_fake_script)()
-local function HEQCB_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(MHNXF_fake_script)()
+local function OZNIGFI_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -503,8 +555,8 @@ local function HEQCB_fake_script() -- CreditsButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(HEQCB_fake_script)()
-local function LCKO_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(OZNIGFI_fake_script)()
+local function YJJTOC_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local db = false
@@ -513,15 +565,18 @@ local function LCKO_fake_script() -- TextButton.LocalScript
 		if db == false then
 			db = true
 			script.Parent.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
-		else
+		else 
 			db = false
 			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,4)
 		end
 	end)
 	
+	
+	
+	
 end
-coroutine.wrap(LCKO_fake_script)()
-local function PTAL_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(YJJTOC_fake_script)()
+local function VTQH_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local db = false
@@ -537,8 +592,8 @@ local function PTAL_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(PTAL_fake_script)()
-local function XQKYGYS_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(VTQH_fake_script)()
+local function VYHMDAO_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local db = false
@@ -554,8 +609,8 @@ local function XQKYGYS_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(XQKYGYS_fake_script)()
-local function LIVM_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(VYHMDAO_fake_script)()
+local function BVDK_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local db = false
@@ -571,8 +626,29 @@ local function LIVM_fake_script() -- TextButton_4.LocalScript
 	end)
 	
 end
-coroutine.wrap(LIVM_fake_script)()
-local function POTZ_fake_script() -- Close.LocalScript 
+coroutine.wrap(BVDK_fake_script)()
+local function ZUEIBA_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
+
+	local db = false
+	local p = game.Players.LocalPlayer
+	local char = p.Character or p.CharacterAdded:Wait()
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if db == false then
+			db = true
+			script.Parent.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+			char:WaitForChild("Humanoid").WalkSpeed = 50
+		else
+			db = false
+			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,4)
+			char:WaitForChild("Humanoid").WalkSpeed = 16
+		end
+	end)
+	
+end
+coroutine.wrap(ZUEIBA_fake_script)()
+local function WPGF_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -580,8 +656,8 @@ local function POTZ_fake_script() -- Close.LocalScript
 	end)
 	
 end
-coroutine.wrap(POTZ_fake_script)()
-local function WQPGK_fake_script() -- Minimize.LocalScript 
+coroutine.wrap(WPGF_fake_script)()
+local function KLEOR_fake_script() -- Minimize.LocalScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	local frame = script.Parent.Parent.Main
@@ -598,16 +674,16 @@ local function WQPGK_fake_script() -- Minimize.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WQPGK_fake_script)()
-local function MNIUG_fake_script() -- Devva.DragScript 
+coroutine.wrap(KLEOR_fake_script)()
+local function HUBVCOB_fake_script() -- Devva.DragScript 
 	local script = Instance.new('LocalScript', Devva)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(MNIUG_fake_script)()
-local function LAWGCH_fake_script() -- Devvas.LocalScript 
-	local script = Instance.new('LocalScript', Devvas)
+coroutine.wrap(HUBVCOB_fake_script)()
+local function FTGVPL_fake_script() -- TextLabel_7.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_7)
 
 	local function SendNotification(title,text,duration,...)
 		game.StarterGui:SetCore("SendNotification", {
@@ -618,12 +694,33 @@ local function LAWGCH_fake_script() -- Devvas.LocalScript
 		})
 	end
 	
+	script.Parent.Text = "Please Wait."
+	wait(1)
+	script.Parent.Text = "Please Wait.."
+	wait(1)
+	script.Parent.Text = "Please Wait..."
+	wait(1)
+	script.Parent.Text = "Please Wait."
+	wait(1)
+	script.Parent.Text = "Please Wait.."
+	wait(1)
+	script.Parent.Text = "Please Wait..."
+	wait(1)
+	script.Parent.Text = "Please Wait."
+	wait(1)
+	script.Parent.Text = "Please Wait.."
+	wait(1)
+	script.Parent.Text = "Please Wait..."
+	wait(1)
+	script.Parent.Text = "Devva Loaded!"
+	wait(3)
+	script.Parent.Parent.Visible = false
+	script.Parent.Parent.Parent.Devva.Visible = true
 	SendNotification("Devva | Script","Status : Online",5)
 	wait(1)
 	SendNotification("Devva | Script","Thanks you for using our Scripts! Made by RenDev",5)
 	
 	if game:GetService("StarterGui") then  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Devva | Script by RenDev", "All")
 	end
-	
 end
-coroutine.wrap(LAWGCH_fake_script)()
+coroutine.wrap(FTGVPL_fake_script)()
