@@ -181,6 +181,7 @@ PlayerFrame.Name = "PlayerFrame"
 PlayerFrame.Parent = Main
 PlayerFrame.Active = true
 PlayerFrame.BackgroundColor3 = Color3.fromRGB(28, 28, 28)
+PlayerFrame.BackgroundTransparency = 1.000
 PlayerFrame.BorderSizePixel = 0
 PlayerFrame.Position = UDim2.new(0.270999998, -4, 0.0265151523, 0)
 PlayerFrame.Size = UDim2.new(0, 340, 0, 250)
@@ -417,7 +418,7 @@ TextLabel_7.TextSize = 17.000
 
 -- Scripts:
 
-local function NILWGIA_fake_script() -- HomeButton.LocalScript 
+local function OHBWND_fake_script() -- HomeButton.LocalScript 
 	local script = Instance.new('LocalScript', HomeButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -432,8 +433,8 @@ local function NILWGIA_fake_script() -- HomeButton.LocalScript
 		script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
 	end)
 end
-coroutine.wrap(NILWGIA_fake_script)()
-local function AASG_fake_script() -- HomeButton.LocalScript 
+coroutine.wrap(OHBWND_fake_script)()
+local function WJRB_fake_script() -- HomeButton.LocalScript 
 	local script = Instance.new('LocalScript', HomeButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -442,8 +443,8 @@ local function AASG_fake_script() -- HomeButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(AASG_fake_script)()
-local function ZYFYXO_fake_script() -- PlayerButton.LocalScript 
+coroutine.wrap(WJRB_fake_script)()
+local function LCEAU_fake_script() -- PlayerButton.LocalScript 
 	local script = Instance.new('LocalScript', PlayerButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -458,8 +459,8 @@ local function ZYFYXO_fake_script() -- PlayerButton.LocalScript
 		script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
 	end)
 end
-coroutine.wrap(ZYFYXO_fake_script)()
-local function HLPPYM_fake_script() -- PlayerButton.LocalScript 
+coroutine.wrap(LCEAU_fake_script)()
+local function WAYV_fake_script() -- PlayerButton.LocalScript 
 	local script = Instance.new('LocalScript', PlayerButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -468,8 +469,8 @@ local function HLPPYM_fake_script() -- PlayerButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(HLPPYM_fake_script)()
-local function HKFEAFE_fake_script() -- ScriptsButton.LocalScript 
+coroutine.wrap(WAYV_fake_script)()
+local function CRKW_fake_script() -- ScriptsButton.LocalScript 
 	local script = Instance.new('LocalScript', ScriptsButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -484,8 +485,8 @@ local function HKFEAFE_fake_script() -- ScriptsButton.LocalScript
 		script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
 	end)
 end
-coroutine.wrap(HKFEAFE_fake_script)()
-local function IZIG_fake_script() -- ScriptsButton.LocalScript 
+coroutine.wrap(CRKW_fake_script)()
+local function GIIYOX_fake_script() -- ScriptsButton.LocalScript 
 	local script = Instance.new('LocalScript', ScriptsButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -497,8 +498,8 @@ local function IZIG_fake_script() -- ScriptsButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(IZIG_fake_script)()
-local function XFFBQDM_fake_script() -- GameButton.LocalScript 
+coroutine.wrap(GIIYOX_fake_script)()
+local function DFMXBCQ_fake_script() -- GameButton.LocalScript 
 	local script = Instance.new('LocalScript', GameButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -513,8 +514,8 @@ local function XFFBQDM_fake_script() -- GameButton.LocalScript
 		script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
 	end)
 end
-coroutine.wrap(XFFBQDM_fake_script)()
-local function BVLEKD_fake_script() -- GameButton.LocalScript 
+coroutine.wrap(DFMXBCQ_fake_script)()
+local function IDJHCSG_fake_script() -- GameButton.LocalScript 
 	local script = Instance.new('LocalScript', GameButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -526,8 +527,8 @@ local function BVLEKD_fake_script() -- GameButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(BVLEKD_fake_script)()
-local function MHNXF_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(IDJHCSG_fake_script)()
+local function ANJXWC_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -542,8 +543,8 @@ local function MHNXF_fake_script() -- CreditsButton.LocalScript
 		script.Parent.TextColor3 = Color3.fromRGB(255,255,255)
 	end)
 end
-coroutine.wrap(MHNXF_fake_script)()
-local function OZNIGFI_fake_script() -- CreditsButton.LocalScript 
+coroutine.wrap(ANJXWC_fake_script)()
+local function JLHMC_fake_script() -- CreditsButton.LocalScript 
 	local script = Instance.new('LocalScript', CreditsButton)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -555,8 +556,8 @@ local function OZNIGFI_fake_script() -- CreditsButton.LocalScript
 	end)
 	
 end
-coroutine.wrap(OZNIGFI_fake_script)()
-local function YJJTOC_fake_script() -- TextButton.LocalScript 
+coroutine.wrap(JLHMC_fake_script)()
+local function MKLECWM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local db = false
@@ -575,8 +576,8 @@ local function YJJTOC_fake_script() -- TextButton.LocalScript
 	
 	
 end
-coroutine.wrap(YJJTOC_fake_script)()
-local function VTQH_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(MKLECWM_fake_script)()
+local function YSPKTN_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	local db = false
@@ -592,8 +593,8 @@ local function VTQH_fake_script() -- TextButton_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(VTQH_fake_script)()
-local function VYHMDAO_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(YSPKTN_fake_script)()
+local function IGNGN_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	local db = false
@@ -609,16 +610,24 @@ local function VYHMDAO_fake_script() -- TextButton_3.LocalScript
 	end)
 	
 end
-coroutine.wrap(VYHMDAO_fake_script)()
-local function BVDK_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(IGNGN_fake_script)()
+local function UAGDJC_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	local db = false
+	local Player = game.Players.LocalPlayer
+	local InfiniteJumpEnabled = true
+	_G.JumpHeight = 50;
 	
 	script.Parent.MouseButton1Down:Connect(function()
 		if db == false then
 			db = true
 			script.Parent.BackgroundColor3 = Color3.fromRGB(85, 255, 0)
+			game:GetService("UserInputService").JumpRequest:connect(function()
+				if InfiniteJumpEnabled then
+					game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+				end
+			end)
 		else
 			db = false
 			script.Parent.BackgroundColor3 = Color3.fromRGB(255,0,4)
@@ -626,8 +635,8 @@ local function BVDK_fake_script() -- TextButton_4.LocalScript
 	end)
 	
 end
-coroutine.wrap(BVDK_fake_script)()
-local function ZUEIBA_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(UAGDJC_fake_script)()
+local function SCFK_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	local db = false
@@ -647,8 +656,8 @@ local function ZUEIBA_fake_script() -- TextButton_5.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZUEIBA_fake_script)()
-local function WPGF_fake_script() -- Close.LocalScript 
+coroutine.wrap(SCFK_fake_script)()
+local function UJJLOS_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -656,33 +665,122 @@ local function WPGF_fake_script() -- Close.LocalScript
 	end)
 	
 end
-coroutine.wrap(WPGF_fake_script)()
-local function KLEOR_fake_script() -- Minimize.LocalScript 
+coroutine.wrap(UJJLOS_fake_script)()
+local function YCZMNEG_fake_script() -- Minimize.LocalScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	local frame = script.Parent.Parent.Main
-	local v = script.Parent.Parent.Main.TabButton
+	local k = frame.TabButton
 	local b = false
+	local TW = game:GetService("TweenService")
+	local ti = TweenInfo.new(
+		0.2,
+		Enum.EasingStyle.Sine,
+		Enum.EasingDirection.Out,
+		0,
+		false
+	)
+	
+	local tranp = 
+		{
+			BackgroundTransparency = 1,
+			TextTransparency = 1
+		}
+	
+	local tranp2 = 
+		{
+			BackgroundTransparency = 0,
+			TextTransparency = 0
+		}
+	
+	local tranp3 = 
+		{
+			BackgroundTransparency = 1
+		}
+	
+	local tranp4 = 
+		{
+			BackgroundTransparency = 0
+		}
 	
 	script.Parent.MouseButton1Down:Connect(function()
 		if b == false then
 			b = true
-			frame.Visible = false
+	
+			k:TweenSize(
+				UDim2.new(0, 117,0, 0),
+				Enum.EasingDirection.Out,
+				Enum.EasingStyle.Sine,
+				1,
+				false
+			)
+	
+			frame:TweenSize(
+				UDim2.new(0, 473,0, 7),
+				Enum.EasingDirection.Out,
+				Enum.EasingStyle.Sine,
+				1,
+				false
+			)
+	
+			for i, v in ipairs(k:GetChildren()) do
+				local bc = TW:Create(v, ti, tranp)
+				bc:Play()
+				bc.Completed:Connect(function()
+					v.Visible = false
+				end)
+			end
+	
+			for i, v in ipairs(k:GetChildren("Frame")) do
+				local vc = TW:Create(v, ti, tranp3)
+				vc:Play()
+			end
+	
+			local HomeTween = TW:Create(frame.HomeFrame, ti, tranp3)
+			local PlayerTween = TW:Create(frame.PlayerFrame, ti, tranp3)
+	
+			HomeTween:Play()
+			frame.HomeFrame.Visible = false
+			PlayerTween:Play()
+			frame.PlayerFrame.Visible = false
 		else
 			b = false
-			frame.Visible = true
+			k:TweenSize(
+				UDim2.new(0, 117,0, 264),
+				Enum.EasingDirection.Out,
+				Enum.EasingStyle.Sine,
+				1,
+				false
+			)
+	
+			frame:TweenSize(
+				UDim2.new(0, 473,0, 264),
+				Enum.EasingDirection.Out,
+				Enum.EasingStyle.Sine,
+				1,
+				false
+			)
+			wait(0.3)
+			for i, v in ipairs(k:GetChildren()) do
+				local bc = TW:Create(v, ti, tranp2)
+				v.Visible = true
+				bc:Play()
+			end
+			wait(0.7)
+			frame.HomeFrame.Visible = true
 		end
 	end)
+	
 end
-coroutine.wrap(KLEOR_fake_script)()
-local function HUBVCOB_fake_script() -- Devva.DragScript 
+coroutine.wrap(YCZMNEG_fake_script)()
+local function WAWS_fake_script() -- Devva.DragScript 
 	local script = Instance.new('LocalScript', Devva)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(HUBVCOB_fake_script)()
-local function FTGVPL_fake_script() -- TextLabel_7.LocalScript 
+coroutine.wrap(WAWS_fake_script)()
+local function MTDD_fake_script() -- TextLabel_7.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_7)
 
 	local function SendNotification(title,text,duration,...)
@@ -723,4 +821,4 @@ local function FTGVPL_fake_script() -- TextLabel_7.LocalScript
 	if game:GetService("StarterGui") then  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Devva | Script by RenDev", "All")
 	end
 end
-coroutine.wrap(FTGVPL_fake_script)()
+coroutine.wrap(MTDD_fake_script)()
